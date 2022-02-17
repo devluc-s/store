@@ -553,7 +553,7 @@ input[type=number]::-webkit-inner-spin-button {
   left: 0;
   width: 300px;
   overflow-y: auto;
-  margin-top: 92px;
+  margin-top: 84px;
   transition: transform cubic-bezier(0, 0, 0.05, 1.03) var(--trans--time);
   -moz-transition: transform cubic-bezier(0, 0, 0.05, 1.03) var(--trans--time);
   -o-transition: transform cubic-bezier(0, 0, 0.05, 1.03) var(--trans--time);
