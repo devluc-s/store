@@ -426,7 +426,7 @@ label {
 #color-1:checked~.color-1::after, #color-2:checked~.color-2::after, #color-3:checked~.color-3::after {
   content: '';
   position: absolute;
-  left: 0; 
+  left: 0;
   right: 0;
   top: 7px;
   margin: 0 auto;
@@ -643,7 +643,7 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: .6;
 }
 
-li.ecommerce__main__card > div:not(li.ecommerce__main__card:first-child > div) {
+li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
   flex: 1 0 250px;
 }
 
@@ -664,20 +664,24 @@ li.ecommerce__main__card > div:not(li.ecommerce__main__card:first-child > div) {
     width: calc(100% - 8%);
     margin: 0 auto;
   }
-  .ecommerce__main__right ul{
+
+  .ecommerce__main__right ul {
     display: flex;
     white-space: nowrap;
     overflow-x: scroll;
   }
+
   .ecommerce__main__image {
     min-width: 100%;
-}
-.ecommerce__header__left>div, .ecommerce__header__menu ul li:not(.ecommerce__header__menu ul li:last-child), .ecommerce__header__search {
-  padding-right: 30px;
-}
-.ecommerce__main__container {
-  padding-top: 84px;
-}
+  }
+
+  .ecommerce__header__left>div, .ecommerce__header__menu ul li:not(.ecommerce__header__menu ul li:last-child), .ecommerce__header__search {
+    padding-right: 30px;
+  }
+
+  .ecommerce__main__container {
+    padding-top: 84px;
+  }
 
   .ecommerce__main__right::after {
     content: '→';
@@ -704,18 +708,42 @@ li.ecommerce__main__card > div:not(li.ecommerce__main__card:first-child > div) {
   .ecommerce__main__container {
     flex-direction: row;
   }
-  .ecommerce__main__right{
+
+  .ecommerce__main__right {
     flex: 1 0 400px;
   }
+
   .ecommerce__main__drescription ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 20px;
   }
+
   .ecommerce__main__drescription ul li:nth-child(odd) {
     flex-direction: row-reverse;
   }
+
+  .ecommerce__main__card .ecommerce__main__info {
+    position: relative;
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    background: #fff;
+  }
+  .ecommerce__main__card:nth-child(1) .ecommerce__main__info{
+    padding: 25px 25px 0 25px;
+    width: calc(100% - 20%);
+    margin: 0 auto;
+    top: -100px;
+  }
+  .ecommerce__main__card:nth-child(2) .ecommerce__main__info{
+    right: 120px;
+    padding: 25px 0 25px 25px;
+  }
+  .ecommerce__main__card:nth-child(3) .ecommerce__main__info{
+    right: -120px;
+    padding: 25px 25px 25px 0;
+  }
+ 
 
   .ecommerce__main__right::after {
     content: '↓';
