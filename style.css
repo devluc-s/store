@@ -669,6 +669,9 @@ input[type=number]::-webkit-inner-spin-button {
 .ecommerce__header__left>div, .ecommerce__header__menu ul li:not(.ecommerce__header__menu ul li:last-child), .ecommerce__header__search {
   padding-right: 30px;
 }
+.ecommerce__main__container {
+  padding-top: 84px;
+}
   .ecommerce__main__right::after {
     content: '→';
     top: 115px;
