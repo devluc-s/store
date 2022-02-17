@@ -726,7 +726,7 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
 
   .ecommerce__main__card .ecommerce__main__info {
     position: relative;
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 680));
     background: #fff;
   }
   .ecommerce__main__card:nth-child(1) .ecommerce__main__info{
