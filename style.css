@@ -288,7 +288,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 84px;
   flex-direction: column-reverse;
 }
 
@@ -688,7 +687,7 @@ input[type=number]::-webkit-inner-spin-button {
   .ecommerce__main__left {
     position: sticky;
     position: -webkit-sticky;
-    top: 90px;
+    top: 84px;
     height: 100vh;
   }
 
