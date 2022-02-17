@@ -650,7 +650,10 @@ input[type=number]::-webkit-inner-spin-button {
 li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
   flex: 1 0 250px;
 }
-
+.ecommerce__main__card .ecommerce__main__info {
+  position: relative;
+  background: #fff;
+}
 @media (max-width: 999.9px) {
   .ecommerce__header__menu, .ecommerce__main__filter {
     display: none;
@@ -688,6 +691,12 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
 
   .ecommerce__main__container {
     padding-top: 84px;
+  }
+  .ecommerce__main__info{
+    width: 92%;
+    margin: 0 auto;
+    top: -60px;
+    padding: 15px 15px 0px 15px;
   }
 
   .ecommerce__main__right::after {
@@ -735,9 +744,7 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
   }
 
   .ecommerce__main__card .ecommerce__main__info {
-    position: relative;
     font-size: calc(16px + 4 * ((100vw - 320px) / 680));
-    background: #fff;
   }
   .ecommerce__main__card:nth-child(1) .ecommerce__main__info{
     padding: 25px 25px 0 25px;
