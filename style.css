@@ -424,12 +424,17 @@ label {
 }
 
 #color-1:checked~.color-1::after, #color-2:checked~.color-2::after, #color-3:checked~.color-3::after {
-  content: '\2714';
+  content: '';
   position: absolute;
-  left: 0;
+  left: 0; 
   right: 0;
+  top: 7px;
   margin: 0 auto;
-  color: #fff;
+  width: 8px;
+  height: 15px;
+  border: solid #fff;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 #color-1:checked~.color-1, #color-2:checked~.color-2, #color-3:checked~.color-3 {
