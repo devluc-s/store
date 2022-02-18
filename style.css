@@ -647,7 +647,7 @@ input[type=number]::-webkit-inner-spin-button {
   opacity: .6;
 }
 
-li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
+li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div, li.ecommerce__main__card:last-child > div) {
   flex: 1 0 250px;
 }
 .ecommerce__main__card .ecommerce__main__info {
@@ -746,7 +746,7 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div) {
   .ecommerce__main__card .ecommerce__main__info {
     font-size: calc(16px + 4 * ((100vw - 320px) / 680));
   }
-  .ecommerce__main__card:nth-child(1) .ecommerce__main__info{
+  .ecommerce__main__card:first-child .ecommerce__main__info, .ecommerce__main__card:last-child .ecommerce__main__info{
     padding: 25px 25px 0 25px;
     width: calc(100% - 20%);
     margin: 0 auto;
