@@ -712,10 +712,12 @@ mark{
     display: -ms-flexbox;
     white-space: nowrap;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
   }
 
   .ecommerce__main__image {
     min-width: 100%;
+    scroll-snap-align: start;
   }
 
   .ecommerce__header__left>div, .ecommerce__header__menu ul li:not(.ecommerce__header__menu ul li:last-child), .ecommerce__header__search {
@@ -812,6 +814,4 @@ mark{
   }
 
 }
-
-
 
