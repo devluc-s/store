@@ -690,12 +690,11 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div, li.
 mark::after {
   content: '';
   position: absolute;
-  background: #ffeb3b;
+  background: #ffc107;
   right: 0;
   left: 0;
-  bottom: 0;
-  top: 0;
-  opacity: 0.4;
+  bottom: -2px;
+  height: 3px;
   width: 0px;
   transition: width ease-in-out var(--trans--time);
   -moz-transition: width ease-in-out var(--trans--time);
