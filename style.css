@@ -781,13 +781,16 @@ mark{
     margin: 0 auto;
     top: -100px;
   }
-
-  .ecommerce__main__card:nth-child(2) .ecommerce__main__info {
+  .ecommerce__main__card:first-child .ecommerce__main__info, .ecommerce__main__card:last-child .ecommerce__main__info{
+    right: 0 !important;
+    padding: 25px 25px 0 25px !important;
+  }
+  .ecommerce__main__card:nth-child(even) .ecommerce__main__info {
     right: 120px;
     padding: 25px 0 25px 25px;
   }
 
-  .ecommerce__main__card:nth-child(3) .ecommerce__main__info {
+  .ecommerce__main__card:nth-child(odd) .ecommerce__main__info {
     right: -120px;
     padding: 25px 25px 25px 0;
   }
@@ -806,6 +809,7 @@ mark{
   }
 
 }
+
 
 @media (min-width: 999.9px) and (max-width: 1200.9px){
   .ecommerce__main__right, .ecommerce__main__left{
