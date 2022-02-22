@@ -687,28 +687,16 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div, li.
   background: #fff;
 }
 
-mark::after {
-  content: '';
-  position: absolute;
-  background: #ffc107;
-  right: 0;
-  left: 0;
-  bottom: -2px;
-  height: 3px;
-  width: 0px;
-  transition: width ease-in-out var(--trans--time);
-  -moz-transition: width ease-in-out var(--trans--time);
-  -o-transition: width ease-in-out var(--trans--time);
-  -webkit-transition: width ease-in-out var(--trans--time);
-}
-
-.ecommerce__main__info:hover mark::after{
-  width: 100%;
-}
-
 mark{
   background: transparent;
-  position: relative;
+  transition: background-color ease-in-out var(--trans--time);
+  -moz-transition: background-color ease-in-out var(--trans--time);
+  -o-transition: background-color ease-in-out var(--trans--time);
+  -webkit-transition: background-color ease-in-out var(--trans--time);
+}
+.ecommerce__main__info:hover mark{
+  background: #ff0d0d;
+  color: #fff;
 }
 
 @media (max-width: 999.9px) {
