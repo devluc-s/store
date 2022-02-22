@@ -695,8 +695,7 @@ mark{
   -webkit-transition: background-color ease-in-out var(--trans--time);
 }
 .ecommerce__main__info:hover mark{
-  background: #ff0d0d;
-  color: #fff;
+  background: revert;
 }
 
 @media (max-width: 999.9px) {
