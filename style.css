@@ -776,15 +776,13 @@ mark{
   }
 
   .ecommerce__main__card:first-child .ecommerce__main__info, .ecommerce__main__card:last-child .ecommerce__main__info {
-    padding: 25px 25px 0 25px;
     width: calc(100% - 20%);
     margin: 0 auto;
     top: -100px;
-  }
-  .ecommerce__main__card:first-child .ecommerce__main__info, .ecommerce__main__card:last-child .ecommerce__main__info{
     right: 0 !important;
     padding: 25px 25px 0 25px !important;
   }
+
   .ecommerce__main__card:nth-child(even) .ecommerce__main__info {
     right: 120px;
     padding: 25px 0 25px 25px;
