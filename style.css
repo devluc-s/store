@@ -806,3 +806,9 @@ mark{
   }
 
 }
+
+@media (min-width: 999.9px) and (max-width: 1200.9px){
+  .ecommerce__main__right, .ecommerce__main__left{
+    min-width: 50%;
+  }
+}
