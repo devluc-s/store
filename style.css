@@ -612,11 +612,12 @@ input[type=number]::-webkit-inner-spin-button {
   display: -ms-flexbox;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 50px;
   width: calc(100% - 8%);
   margin: 0 auto;
 }
-
+.ecommerce__main__drescription ul li{
+  margin-bottom: 50px;
+}
 .ecommerce__footer__bottom, .ecommerce__footer {
   background: var(--bg--color--pri);
   position: relative;
@@ -684,7 +685,7 @@ mark{
   -webkit-transition: background-color ease-in-out var(--trans--time);
 }
 .ecommerce__main__info:hover mark{
-  background: revert;
+  background: var(--bg--color--sec);
 }
 
 @media (max-width: 999.9px) {
@@ -772,7 +773,6 @@ mark{
     display: -ms-flexbox;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
   }
 
   .ecommerce__main__drescription ul li:nth-child(odd) {
@@ -814,4 +814,6 @@ mark{
   }
 
 }
+
+
 
