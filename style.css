@@ -687,6 +687,31 @@ li.ecommerce__main__card>div:not(li.ecommerce__main__card:first-child > div, li.
   background: #fff;
 }
 
+mark::after {
+  content: '';
+  position: absolute;
+  background: #ffeb3b;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.4;
+  width: 0px;
+  transition: width ease-in-out var(--trans--time);
+  -moz-transition: width ease-in-out var(--trans--time);
+  -o-transition: width ease-in-out var(--trans--time);
+  -webkit-transition: width ease-in-out var(--trans--time);
+}
+
+.ecommerce__main__info:hover mark::after{
+  width: 100%;
+}
+
+mark{
+  background: transparent;
+  position: relative;
+}
+
 @media (max-width: 999.9px) {
   .ecommerce__header__menu, .ecommerce__main__filter {
     display: none;
