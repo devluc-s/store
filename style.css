@@ -606,12 +606,6 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .ecommerce__main__drescription ul {
-  display: flex;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  flex-wrap: wrap;
-  align-items: flex-start;
   width: calc(100% - 8%);
   margin: 0 auto;
 }
