@@ -442,5 +442,15 @@ a{
   }
   .menu-container li{
     display: none;
-  }
+  }.grid-item-1 ul {
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    
+}
+.grid-item-1 ul li{
+  min-width: 100%;
+  scroll-snap-align: start;
+}
 }
