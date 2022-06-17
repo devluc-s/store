@@ -442,9 +442,13 @@ a{
   }.grid-item-1 ul {
     overflow-x: scroll;
     white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
     display: flex;
-    
+    flex-direction: row;
 }
 .grid-item-1 ul li{
   min-width: 100%;
