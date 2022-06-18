@@ -270,7 +270,14 @@ a{
 
 header{
   grid-area: header;
-  align-self: center;
+}
+
+main{
+  grid-area: main;
+}
+
+aside{
+  grid-area: aside;
 }
 
 .grid-header{
@@ -281,7 +288,7 @@ header{
   grid-auto-flow: column;
   align-items: center;
   column-gap: 25px;
-  grid-area: header;
+  grid-template-rows: 70px;
 }
 .menu-container {
   display: flex;
@@ -335,19 +342,12 @@ header{
   visibility: visible;
 }
 
-main{
-  grid-area: main;
-}
-
 .grid-item-1 ul{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-aside{
-  grid-area: aside;
-}
 .grid-item-2{
   padding-left: 40px;
   position: sticky;
