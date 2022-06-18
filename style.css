@@ -396,33 +396,30 @@ aside{
   background: #fff;
   border: 1px solid #333;
 }
-.btn-toggle button{
-  position: relative;
-  z-index: 999;
-  cursor: pointer;
+.no-scroll{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
-
 
 .menu-mobile{
   position: fixed;
   background: #fff;
-  right: -250px;
+  right: -300px;
   top: 0;
   bottom: 0;
   z-index: 22;
   width: 0px;
   height: 100vh;
   white-space: nowrap;
-  padding: 100px 15px 15px 15px;
   transition: all cubic-bezier(0.4, 0, 0.2, 1) 500ms;
 }
 .open{
-  width: 250px;
+  width: 300px;
   right: 0;
-}
-
-.menu-mobile li{
-  margin-bottom: 15px;
 }
 
 .open ~ .bg-overlay{
@@ -435,7 +432,12 @@ aside{
   backdrop-filter: blur(3px);
   z-index: 9;
 }
-
+.menu-mobile a{
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 1.132em;
+}
 @media (min-width: 767.98px){
 .btn-toggle{
   display: none;
@@ -443,7 +445,7 @@ aside{
 }
 
 @media (max-width: 991.98px){
-  .grid-item-1 ul li:first-child{
+  .grid-item-1 ul li:first-child, .grid-item-1 ul li:last-child{
     grid-column: span 2;
   }
 }
@@ -474,5 +476,6 @@ aside{
 .grid-item-1 ul li{
   min-width: 100%;
   scroll-snap-align: start;
+  grid-column: auto !important;
 }
 }
