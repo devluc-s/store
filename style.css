@@ -352,6 +352,7 @@ aside{
   padding-left: 40px;
   position: sticky;
   top: 20px;
+  display: grid;
 }
 .grid-item-2 p{
   margin: 20px 0;
@@ -477,5 +478,9 @@ aside{
   min-width: 100%;
   scroll-snap-align: start;
   grid-column: auto !important;
+}
+.grid-images{
+  grid-row: 1;
+  margin-top: 15px;
 }
 }
