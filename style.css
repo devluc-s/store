@@ -254,26 +254,34 @@ a{
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1385px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .grid-container{
   display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-template-rows: 70px;
+  grid-template-areas: 
+  "header header header"
+  "main main aside"
+  "main main aside";
+}
+
+header{
+  grid-area: header;
+  align-self: center;
 }
 
 .grid-header{
   font-weight: 700;
-  grid-column: 1/-1;
   display: grid;
   grid-template-columns: auto 1fr auto;
   grid-auto-columns: auto;
   grid-auto-flow: column;
   align-items: center;
   column-gap: 25px;
-  position: relative;
+  grid-area: header;
 }
 .menu-container {
   display: flex;
@@ -289,30 +297,46 @@ a{
   border-bottom: 2px solid;
 }
 .menu{
-  background: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    max-height: 0px;
-    overflow: hidden;
-    z-index: 99;
-    top: 64px;
-    transition: all cubic-bezier(0.88, -0.3, 0.65, 1.22) 500ms;
-    opacity: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    box-shadow: 0px 30px 21px -19px #ddd;
+  background: linear-gradient(180deg, white, #f2f2f2f7);
+  backdrop-filter: grayscale(2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 0px;
+  overflow: hidden;
+  z-index: 99;
+  top: 102px;
+  transition: all cubic-bezier(0.88, -0.3, 0.65, 1.22) 500ms;
+  opacity: 0;
+  max-height: 0px;
+  box-shadow: 0px 11px 13px 0px #c2c2c2ba;
+  transform: scaleY(0);
+  transform-origin: top;
+  visibility: hidden;
 }
+
+.menu-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 25px 0;
+}
+
 .menu ul li{
-  margin: 15px 0;
+  margin-bottom: 15px;
 }
 .menu ul a{
   font-weight: 400;
 }
 
 .grid-header ul li:hover .menu{
-  max-height: 1500px;
-  opacity: unset;
+  max-height: 100vh;
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+main{
+  grid-area: main;
 }
 
 .grid-item-1 ul{
@@ -320,12 +344,14 @@ a{
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.sticky{
-  position: sticky;
-  top: 20px;
+
+aside{
+  grid-area: aside;
 }
 .grid-item-2{
   padding-left: 40px;
+  position: sticky;
+  top: 20px;
 }
 .grid-item-2 p{
   margin: 20px 0;
@@ -416,14 +442,6 @@ a{
 }
 }
 
-@media (max-width: 1199.98px) {
-  .container{
-    padding: 0 15px;
-  }
-  .grid-container{
-    grid-template-columns: 1.2fr 1fr;
-  }
- }
 @media (max-width: 991.98px){
   .grid-item-1 ul li:first-child{
     grid-column: span 2;
@@ -432,7 +450,10 @@ a{
 
 @media (max-width: 767.98px){
   .grid-container{
-    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside";
   }
   .grid-item-2{
     padding-left: 0px;
